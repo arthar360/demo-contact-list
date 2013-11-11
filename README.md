@@ -1,4 +1,4 @@
 demo-contact-list
 =================
 
-A simple contact list demo
+A simple contact list demo.
