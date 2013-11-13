@@ -25,20 +25,17 @@
 			<div class="slides bridgeit">
 
 				<section data-background="assets/banner-background-diagonal.png">
-					<img class="bridgeit-logo" src="assets/bridgeit-logo-background.png"/>
+					<img class="bridgeit-logo-titlepage" src="assets/bridgeit-logo-background.png"/>
+					<h2 class="bridgeit-font">BridgeIt</h2>
+					<h3 class="thin">Contact List Demo</h3>
+					<p>
+						Get started with native mobile integration with BridgeIt
+					</p>
 					<div class="contact-icon">
                         <i class="contact-at">@</i>
                         <i class="icon-calendar-empty"></i>
                     </div>
-
-					<h2 class="bridgeit-font">BridgeIt</h2>
-					<h3>Contact List Demo</h3>
-					<p class="cursive"><em>Web...meet Native</em></p>
-					
-					<p>
-						A quick introduction to getting started with native 
-						mobile integration with BridgeIt.
-					</p>
+                    <p class="cursive" style="margin-top: 20px;"><em>Web...meet Native</em></p>
 
 				</section>
 
@@ -141,8 +138,7 @@
 </div><!-- /page -->
  ...
  {% endhighlight %}
- 						<p class="fragment">...or use whatever mobile framework you like...
- 							it's all good.</p>
+ 						
 					</section>
 
 					<section data-background="assets/banner-background-diagonal.png"
@@ -205,7 +201,7 @@
 						data-previous-indexv="0">
 						<h3>Add a callback for the fetchContact call</h3>
 {% highlight html %}
-<a type="button" onclick="bridgeit.fetchContact('myContacts', 'onAfterFetchContacts');">
+<a type="button" onclick="bridgeit.fetchContact('myContacts', 'onAfterFetchContact');">
     Fetch a Contact
 </a>
  {% endhighlight %}
@@ -323,7 +319,7 @@ function onAfterFetchContact(event){
 				</section>
 
 				<section data-background="assets/banner-background-diagonal.png">
-					<img class="bridgeit-logo" src="assets/bridgeit-logo-background.png"/>
+					<img class="bridgeit-logo-titlepage" src="assets/bridgeit-logo-background.png"/>
 
 					<h3 style="text-transform: initial">http://bridgeit.mobi</h2>
 					<p class="fragment cursive"><em>Web...meet Native</em></p>

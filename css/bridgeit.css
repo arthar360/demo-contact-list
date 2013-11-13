@@ -9,7 +9,6 @@
 	letter-spacing: normal;
 }
 .reveal .slides>section{
-	min-width: 113%;
 	min-height: 200px;
 }
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
@@ -18,8 +17,12 @@
 	letter-spacing: normal;
 }
 .reveal .cursive{
-	font-family: "Times New Roman";
+	font-family: "Open sans";
 	font-style: italic;
+	font-size: 30px;
+}
+.reveal .thin{
+	font-weight: 200;
 }
 .reveal section .bridgeit-logo{
 	border: 0;
@@ -34,6 +37,14 @@
 	left: 0;
 	opacity: 0.3;
 }
+.reveal section .bridgeit-logo-titlepage{
+	border: 0;
+	width: 200px;
+	-webkit-box-shadow: none;
+	box-shadow: none !important;
+	background: none;
+	opacity: 0.3;
+}
 .bridgeit-font{
     font-family: GoodTimes, Arial !important;
     text-shadow: 0px -2px 5px rgba(85, 64, 52, 0.9);
@@ -43,23 +54,20 @@
 }
 i.contact-at {
 	font-style: normal;
-	position: absolute;
-	margin-left: 42px;
-	font-size: 89px;
-	margin-top: 101px;
+	font-size: 68px;
 	padding: 0;
 	line-height: 0;
+	position: absolute;
+	margin: 69px 0 0 27px;
 }
 .reveal .contact-icon{
 	font-style: normal;
-	float: left;
-	font-size: 178px;
+	font-size: 122px;
 	line-height: 0;
-	clear: both;
-	margin: 300px 0 0 0;
+	text-align: center;
 	width: 200px;
-	position: absolute;
-
+	margin: 0 auto;
+	opacity: 0.5;
 }
 .reveal .screenshot{
 	width: 300px;
