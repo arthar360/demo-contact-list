@@ -14,12 +14,14 @@
 <body>
 
 <div data-role="page">
-
 	<div data-role="header">
 		<h1>My Contacts</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">
+		<a type="button" onclick="bridgeit.fetchContact('myContacts','onAfterFetchContact');">
+		   Fetch a Contact
+		</a>
 		<p>
 			<ul data-role="listview" data-filter="true" data-filter-placeholder="Contact List..." data-inset="true">
 			</ul>

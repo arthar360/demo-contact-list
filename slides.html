@@ -46,26 +46,28 @@
 					<ul>
 						<li class="fragment" data-fragment-index="0">Easily add native mobile features to your web apps</li>
 						<li class="fragment" data-fragment-index="1">Simple JavaScript API</li>
-						<li class="fragment" data-fragment-index="2">Open Source...fork us on GitHub!</li>
+						<!--li class="fragment" data-fragment-index="2">Open Source...fork us on GitHub!</li-->
 						<li class="fragment" data-fragment-index="3">Support for Android, iOS, and Windows Phone 8</li>
 					</ul>
 
 				</section>
 
-				<section data-background="assets/banner-background-diagonal.png"
-					data-previous-indexv="0">
-					<img class="bridgeit-logo" src="assets/bridgeit-logo-background.png"/>
-					<h3>What are we going to do?</h3>
-					<ul>
-						<li class="fragment" data-fragment-index="0">Create a simple mobile web page</li>
-						<li class="fragment" data-fragment-index="1">Add BridgeIt support</li>
-						<li class="fragment" data-fragment-index="2">Access the native mobile contact list</li>
-						<li class="fragment" data-fragment-index="3">Show the contacts on our web page</li>
-					</ul>
-				</section>
+				
 
 				<section data-background="assets/banner-background-diagonal.png"
 					data-previous-indexv="0">
+
+					<section data-background="assets/banner-background-diagonal.png"
+						data-previous-indexv="0">
+						<img class="bridgeit-logo" src="assets/bridgeit-logo-background.png"/>
+						<h3>What are we going to do?</h3>
+						<!--ul>
+							<li class="fragment" data-fragment-index="0">Create a simple mobile web page</li>
+							<li class="fragment" data-fragment-index="1">Add BridgeIt support</li>
+							<li class="fragment" data-fragment-index="2">Access the native mobile contact list</li>
+							<li class="fragment" data-fragment-index="3">Show the contacts on our web page</li>
+						</ul-->
+					</section>
 					
 					<section data-background="assets/banner-background-diagonal.png"
 					data-previous-indexv="0">
@@ -205,11 +207,10 @@
     Fetch a Contact
 </a>
  {% endhighlight %}
- 						<p class="fragment">Why is the function passed as a String??</p>
- 						<p class="fragment">BridgeIt needs to store the name of the function to call it later..</p>
+
 					</section>
 
-					<section data-background="assets/banner-background-diagonal.png"
+					<!--section data-background="assets/banner-background-diagonal.png"
 						data-previous-indexv="0">
 						<h3>Add the callback function</h3>
 {% highlight html %}
@@ -220,7 +221,7 @@ function onAfterFetchContact(event){
 </script>
  {% endhighlight %}
  						
-					</section>
+					</section-->
 
 				<section data-background="assets/banner-background-diagonal.png"
 					data-previous-indexv="0">
@@ -247,7 +248,7 @@ function onAfterFetchContact(event){
 {% highlight html %}
 <script type="text/javascript">
 function onAfterFetchContact(event){
-	var text = unescape(event.value);
+    var text = unescape(event.value);
     var record = bridgeit.url2Object(text);
     var elem = document.getElementById("contacts");
     var item = document.createElement('li');
@@ -311,6 +312,9 @@ function onAfterFetchContact(event){
 					        </li>
 					        <li class="fragment">
 					          <i class="icon-cloud-download"></i>Cloud Push
+					        </li>
+					        <li class="fragment">
+					          <i class="icon-book"></i>bridgeit.github.io/bridgeit.js/wiki
 					        </li>
 						</ul>
 					</p>

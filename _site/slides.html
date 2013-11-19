@@ -44,26 +44,28 @@
 					<ul>
 						<li class="fragment" data-fragment-index="0">Easily add native mobile features to your web apps</li>
 						<li class="fragment" data-fragment-index="1">Simple JavaScript API</li>
-						<li class="fragment" data-fragment-index="2">Open Source...fork us on GitHub!</li>
+						<!--li class="fragment" data-fragment-index="2">Open Source...fork us on GitHub!</li-->
 						<li class="fragment" data-fragment-index="3">Support for Android, iOS, and Windows Phone 8</li>
 					</ul>
 
 				</section>
 
-				<section data-background="assets/banner-background-diagonal.png"
-					data-previous-indexv="0">
-					<img class="bridgeit-logo" src="assets/bridgeit-logo-background.png"/>
-					<h3>What are we going to do?</h3>
-					<ul>
-						<li class="fragment" data-fragment-index="0">Create a simple mobile web page</li>
-						<li class="fragment" data-fragment-index="1">Add BridgeIt support</li>
-						<li class="fragment" data-fragment-index="2">Access the native mobile contact list</li>
-						<li class="fragment" data-fragment-index="3">Show the contacts on our web page</li>
-					</ul>
-				</section>
+				
 
 				<section data-background="assets/banner-background-diagonal.png"
 					data-previous-indexv="0">
+
+					<section data-background="assets/banner-background-diagonal.png"
+						data-previous-indexv="0">
+						<img class="bridgeit-logo" src="assets/bridgeit-logo-background.png"/>
+						<h3>What are we going to do?</h3>
+						<!--ul>
+							<li class="fragment" data-fragment-index="0">Create a simple mobile web page</li>
+							<li class="fragment" data-fragment-index="1">Add BridgeIt support</li>
+							<li class="fragment" data-fragment-index="2">Access the native mobile contact list</li>
+							<li class="fragment" data-fragment-index="3">Show the contacts on our web page</li>
+						</ul-->
+					</section>
 					
 					<section data-background="assets/banner-background-diagonal.png"
 					data-previous-indexv="0">
@@ -205,11 +207,10 @@
 <span class="nt">&lt;/a&gt;</span>
  
 </code></pre></div>
- 						<p class="fragment">Why is the function passed as a String??</p>
- 						<p class="fragment">BridgeIt needs to store the name of the function to call it later..</p>
+
 					</section>
 
-					<section data-background="assets/banner-background-diagonal.png"
+					<!--section data-background="assets/banner-background-diagonal.png"
 						data-previous-indexv="0">
 						<h3>Add the callback function</h3>
 <div class="highlight"><pre><code class="html"><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
@@ -220,7 +221,7 @@
  
 </code></pre></div>
  						
-					</section>
+					</section-->
 
 				<section data-background="assets/banner-background-diagonal.png"
 					data-previous-indexv="0">
@@ -246,7 +247,7 @@
 						<h3>We can work with the selected contact info in our callback</h3>
 <div class="highlight"><pre><code class="html"><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span><span class="nt">&gt;</span>
 <span class="kd">function</span> <span class="nx">onAfterFetchContact</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
-	<span class="kd">var</span> <span class="nx">text</span> <span class="o">=</span> <span class="nx">unescape</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">text</span> <span class="o">=</span> <span class="nx">unescape</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span>
     <span class="kd">var</span> <span class="nx">record</span> <span class="o">=</span> <span class="nx">bridgeit</span><span class="p">.</span><span class="nx">url2Object</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span>
     <span class="kd">var</span> <span class="nx">elem</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;contacts&quot;</span><span class="p">);</span>
     <span class="kd">var</span> <span class="nx">item</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">);</span>
@@ -311,6 +312,9 @@
 					        </li>
 					        <li class="fragment">
 					          <i class="icon-cloud-download"></i>Cloud Push
+					        </li>
+					        <li class="fragment">
+					          <i class="icon-book"></i>bridgeit.github.io/bridgeit.js/wiki
 					        </li>
 						</ul>
 					</p>

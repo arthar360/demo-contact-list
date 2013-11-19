@@ -24,7 +24,8 @@
 		</a>
 		<script type="text/javascript">
 		function onAfterFetchContact(event){
-			var text = unescape(event.value);
+			if( event.value ){
+				var text = unescape(event.value);
 	        var record = bridgeit.url2Object(text);
 	        var elem = document.getElementById("contacts");
 	        var item = document.createElement('li');
@@ -35,6 +36,7 @@
 	        item.innerHTML = recordHTML;
 	        elem.insertBefore(item, elem.firstChild);
 	        $( "#contacts" ).listview( "refresh" );
+			}
 		}
 		</script>
 		<p>

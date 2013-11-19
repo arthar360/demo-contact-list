@@ -19,11 +19,28 @@
 	</div><!-- /header -->
 
 	<div data-role="content">
-		<a type="button" onclick="bridgeit.fetchContact('myContacts','callback');">
+		<a type="button" onclick="bridgeit.fetchContact('myContacts','onAfterFetchContact');">
 		   Fetch a Contact
 		</a>
+		<script type="text/javascript">
+		function onAfterFetchContact(event){
+			if( event.value ){
+				var text = unescape(event.value);
+		        var record = bridgeit.url2Object(text);
+		        var elem = document.getElementById("contacts");
+		        var item = document.createElement('li');
+		        var recordHTML = '';
+		        for (var key in record)  {
+		            recordHTML += "<span><strong>" + key + ": </strong>" + record[key] + "</span><br/>";  
+		        }
+		        item.innerHTML = recordHTML;
+		        elem.insertBefore(item, elem.firstChild);
+		        $( "#contacts" ).listview( "refresh" );
+		    }
+		}
+		</script>
 		<p>
-			<ul data-role="listview" data-filter="true" data-filter-placeholder="Contact List..." data-inset="true">
+			<ul id="contacts" data-role="listview" data-filter="true" data-filter-placeholder="Contact List..." data-inset="true">
 			</ul>
 		</p>
 	</div><!-- /content -->
